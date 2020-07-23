@@ -1,0 +1,44 @@
+@import "./colors.scss";
+
+@mixin bgTurquoise {
+  background-color: $turquoise;
+}
+@mixin bgIndigo {
+  background-color: $indigo;
+}
+
+@mixin bgDarkTurquise {
+  background-color: $darkTurquoise;
+}
+
+@mixin bgCrimson {
+  background-color: $crimson;
+}
+
+@mixin bgBlue {
+  background-color: $blue;
+}
+
+@mixin bgHeader {
+  background-color: $headerColor;
+}
+
+@mixin bgSidebar {
+  background-color: $sidebarColor;
+}
+
+@mixin bgLightGrey {
+  background-color: $lightGrey;
+}
+
+@mixin bgGreen {
+  background-color: $green;
+}
+
+@mixin bgRed {
+  background-color: $red;
+}
+
+@mixin bgGrey {
+  background-color: $grey;
+}

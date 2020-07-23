@@ -1,0 +1,22 @@
+@mixin textBold {
+    font-weight: 500;
+}
+@mixin textLight {
+    font-weight: 300;
+}
+
+@mixin textBig {
+    font-size: 1.05rem;
+}
+
+@mixin textOpacity50 {
+    opacity: 0.5;
+}
+
+@mixin textSmall {
+    font-size: 0.7rem;
+}
+
+@mixin highRow {
+    line-height: 1.7;
+}

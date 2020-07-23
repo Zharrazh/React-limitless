@@ -1,0 +1,47 @@
+@import "../../../../utils/styles/textDecoration.scss";
+
+.userCard {
+  height: 38px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__leftSide {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 -10px;
+
+    &__textInfo {
+      display: flex;
+      flex-direction: column;
+
+      &__fullName {
+        @include textBold;
+      }
+
+      &__location {
+        display: flex;
+        align-items: center;
+        margin: 0 -5px;
+        @include textSmall;
+        @include textOpacity50;
+        @include highRow;
+      }
+      &__location > * {
+        margin: 0 5px;
+      }
+    }
+  }
+  &__leftSide > img {
+    height: 100%;
+    border-radius: 50%;
+  }
+  &__leftSide > * {
+    margin: 0 10px;
+  }
+
+
+}

@@ -1,0 +1,6 @@
+@import "../../../utils/styles/backgrounds.scss";
+
+.pageContent {
+    flex: 7;
+    @include bgLightGrey;
+}

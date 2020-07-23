@@ -1,0 +1,29 @@
+@import "../styles/backgrounds.scss";
+
+.statusLabel {
+  padding: 3px 6px;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.6rem;
+
+  &__SUCCESS {
+    @include bgGreen;
+  }
+
+  &__ERROR {
+    @include bgRed;
+  }
+
+  &__UNKNOWN {
+    @include bgGrey;
+  }
+
+  &__SMALL {
+    font-size: 0.4rem;
+  }
+
+  &__MEDIUM{
+    font-size: 0.6rem;
+  }
+
+}

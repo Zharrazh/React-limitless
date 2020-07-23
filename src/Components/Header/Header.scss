@@ -1,0 +1,41 @@
+@import "../../utils/styles/backgrounds.scss";
+
+.header {
+  @include bgHeader;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+
+  &__leftSide {
+    display: flex;
+    align-items: center;
+
+    &__sidebarToggler,
+    &__gitUpdateToggler {
+      width: 50px;
+      text-align: center;
+    }
+
+    &__statusLabel {
+      margin: 0 10px;
+    }
+  }
+
+  &__rightSide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__userOnlineToggler,
+    &__messagesToggler {
+      width: 50px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "./colors.scss";
+
+@mixin textTurquoise {
+    color: $turquoise;
+}
+
+@mixin textOrange {
+    color: $orange;
+}
+
+@mixin textViolet {
+    color: $violet;
+}
