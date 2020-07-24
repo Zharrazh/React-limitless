@@ -1,0 +1,33 @@
+@import "../../../../../../utils/styles/textDecoration.scss";
+
+.traficStatItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: 0 -10px;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        @include textBold;
+      }
+
+      &__avg {
+        @include textOpacity50;
+      }
+    }
+  }
+  &__info > * {
+    padding: 0 10px;
+  }
+
+  &__graph {
+    padding: 10px;
+  }
+}

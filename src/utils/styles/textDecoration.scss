@@ -5,12 +5,20 @@
     font-weight: 300;
 }
 
+@mixin textOpacity50 {
+    opacity: 0.5;
+}
+
+@mixin textVeryBig {
+    font-size: 1.2rem;
+}
+
 @mixin textBig {
     font-size: 1.05rem;
 }
 
-@mixin textOpacity50 {
-    opacity: 0.5;
+@mixin textCardTitle {
+    font-size: .95rem;
 }
 
 @mixin textSmall {

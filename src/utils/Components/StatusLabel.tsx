@@ -6,6 +6,7 @@ export enum StatusType {
   SUCCESS = "statusLabel__SUCCESS",
   ERROR = "statusLabel__ERROR",
   UNKNOWN = "statusLabel__UNKNOWN",
+  INFO = "statusLabel__INFO"
 }
 
 export enum StatusSize {
@@ -20,5 +21,5 @@ type StatusLabelProps = {
 };
 
 export const StatusLabel: FunctionComponent<StatusLabelProps> = (props) => {
-  return <span className={"statusLabel" + " " + props.type + " " + props.size}>{props.text}</span>;
+  return <span className={`statusLabel ${props.type} ${props.size}`}>{props.text}</span>;
 };

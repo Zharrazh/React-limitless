@@ -11,3 +11,11 @@
 @mixin textViolet {
     color: $violet;
 }
+
+@mixin textDefaultColor {
+    color: $mainTextcolor;
+}
+
+@mixin textBlue {
+    color: $blue;
+}

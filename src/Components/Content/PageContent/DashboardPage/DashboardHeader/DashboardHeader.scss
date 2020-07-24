@@ -1,0 +1,65 @@
+@import "../../../../../utils/styles/textDecoration.scss";
+.dashboardHeader {
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            margin: 0 -6px;
+            display: flex;
+            align-items: center;
+
+            &__text {
+                display: flex;
+                align-items: center;
+                @include textVeryBig;
+
+                &__controller {
+                    @include textBold;
+                }
+            }
+        }
+        &__title > * {
+            margin: 0 6px;
+        }
+
+        &__controls {
+            display: flex;
+            align-items: center;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        &__controls > * {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    &__sub {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__title {
+            display: flex;
+            align-items: center;
+
+            span{
+                @include textOpacity50;
+            }
+        }
+
+        &__controls {
+            display: flex;
+            align-items: center;
+            padding: 0 -5px;
+        }
+        &__controls > * {
+            padding: 0 5px;
+        }
+    }
+}

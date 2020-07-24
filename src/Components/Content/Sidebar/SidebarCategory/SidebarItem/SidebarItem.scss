@@ -1,0 +1,29 @@
+@import "../../../../../utils/styles/textDecoration.scss";
+@import "../../../../../utils/styles/backgrounds.scss";
+
+.sidebarItem {
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 -10px;
+    display: flex;
+    align-items: center;
+
+    &__icon{
+        width: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        flex:1;
+        @include textBold;
+    }
+}
+
+.sidebarItem > * {
+    margin: 0 10px;
+}
+
+.selected{
+    background-color: #26A69A;
+}

@@ -1,0 +1,29 @@
+@import "../../../../../utils/styles/textDecoration.scss";
+
+.marketingCampaigns{
+    padding: 10px;
+
+    &__header{
+        display: flex;
+        flex-direction: column;
+
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__title{
+                @include textCardTitle;
+            }
+
+            &__control{
+                margin: 0 -10px;
+                display: flex;
+                align-items: center;
+            }
+            &__control > *{
+                margin: 0 10px;
+            }
+        }
+    }
+}

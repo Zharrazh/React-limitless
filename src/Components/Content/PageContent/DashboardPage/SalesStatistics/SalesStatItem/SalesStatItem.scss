@@ -1,0 +1,16 @@
+@import "../../../../../../utils/styles/textDecoration.scss";
+
+.salesStatItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__value {
+    @include textBig;
+    @include textBold;
+  }
+
+  &__description {
+    @include textOpacity50;
+  }
+}

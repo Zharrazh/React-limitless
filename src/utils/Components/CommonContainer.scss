@@ -1,9 +1,9 @@
 @import "../styles/backgrounds.scss";
 
 .commonContainer {
-  margin: 10px;
+  box-sizing: border-box;
+  height: 100%;
   padding: 20px;
   background-color: white;
   border: rgba(0, 0, 0, 0.125) 1px solid;
-  @include bgTurquoise;
 }

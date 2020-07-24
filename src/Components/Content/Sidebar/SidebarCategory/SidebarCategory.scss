@@ -1,9 +1,10 @@
 @import "../../../../utils/styles/textDecoration.scss";
 
-.sidebarCategory{
-    padding: 20px 20px 12px 20px;
-
-    &__name{
+.sidebarCategory {
+    &__name {
+        padding-top: 20px;
+        padding-bottom: 12px;
+        padding-left: 20px;
         height: 20px;
         @include textOpacity50;
         @include textSmall;

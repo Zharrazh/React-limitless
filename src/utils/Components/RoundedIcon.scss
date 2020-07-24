@@ -1,0 +1,13 @@
+@import "../styles/textColors.scss";
+
+.roundedIcon.TURQUOISE{
+    @include textTurquoise;
+}
+
+.roundedIcon.ORANGE{
+    @include textOrange;
+}
+
+.roundedIcon.VIOLET{
+    @include textViolet;
+}

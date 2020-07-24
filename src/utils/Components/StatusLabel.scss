@@ -10,6 +10,10 @@
     @include bgGreen;
   }
 
+  &__INFO{
+    @include bgBlue;
+  }
+
   &__ERROR {
     @include bgRed;
   }

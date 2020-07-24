@@ -3,4 +3,7 @@
 .pageContent {
     flex: 7;
     @include bgLightGrey;
+
+    display: flex;
+    flex-direction: column;
 }

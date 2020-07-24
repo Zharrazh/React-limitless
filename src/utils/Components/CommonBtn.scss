@@ -1,0 +1,11 @@
+.commonBtn {
+  display: flex;
+  align-items: center;
+  padding-left: -6px;
+  padding-right: -6px;
+}
+
+.commonBtn > * {
+  padding-left: 6px;
+  padding-right: 6px;
+}

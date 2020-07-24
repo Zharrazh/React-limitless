@@ -1,0 +1,16 @@
+@import "../styles/backgrounds.scss";
+
+.roundLabel {
+  padding: 3px 6px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.6rem;
+}
+
+.roundLabel.GREEN{
+  @include bgGreen;
+}
+
+.roundLabel.RED{
+  @include bgRed;
+}
