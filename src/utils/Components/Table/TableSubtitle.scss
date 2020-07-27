@@ -1,0 +1,13 @@
+@import "../../styles/textColors.scss";
+
+.tableSubtitle {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.015);
+    border: rgba(0, 0, 0, 0.125) 1px solid;
+
+    i {
+      @include textViolet;
+    }
+  }

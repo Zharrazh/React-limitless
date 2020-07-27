@@ -1,0 +1,14 @@
+@import "../../../../../../utils/styles/textDecoration.scss";
+
+.mcTableRow {
+    height: 60px;
+
+    &__client{
+        @include textOpacity50;
+    }
+
+    &__budget{
+        @include textBold;
+        font-size: .95rem;
+    }
+}

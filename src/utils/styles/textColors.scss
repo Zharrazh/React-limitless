@@ -19,3 +19,11 @@
 @mixin textBlue {
     color: $blue;
 }
+
+@mixin textGreen {
+    color: $green;    
+}
+
+@mixin textRed {
+    color: $red;    
+}

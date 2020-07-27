@@ -1,0 +1,35 @@
+@import "../styles/textDecoration.scss";
+
+.commonInfoLabel {
+    height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 -10px;
+  > * {
+    margin: 0 10px;
+  }
+
+  &__img {
+      height: 100%;
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__textInfo {
+    display: flex;
+    flex-direction: column;
+
+    &__mainInfo {
+      @include textBold;
+    }
+
+    &__secondaryInfo {
+      @include textOpacity50;
+    }
+  }
+}

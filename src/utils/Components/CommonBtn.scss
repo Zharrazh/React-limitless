@@ -1,11 +1,27 @@
+@import "../styles/backgrounds.scss";
+
 .commonBtn {
   display: flex;
   align-items: center;
   padding-left: -6px;
   padding-right: -6px;
 }
-
 .commonBtn > * {
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.commonBtn.INDIGO{
+  @include bgIndigo;
+  color: white;
+}
+
+.commonBtn.TURQUOISE{
+  @include bgTurquoise;
+  color: white;
+}
+
+.commonBtn.rounded{
+  border-radius: 3px;
+  padding: 8px;
 }

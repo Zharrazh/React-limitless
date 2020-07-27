@@ -1,0 +1,22 @@
+@import "../styles/textColors.scss";
+@import "../styles/textDecoration.scss";
+
+.dynamicLabel {
+    display: flex;
+    align-items: center;
+    margin: 0 -4px;
+}
+.dynamicLabel > * {
+    margin: 0 4px;
+}
+.dynamicLabel > span {
+    @include textSmall
+}
+
+.dynamicLabel.positive{
+    @include textGreen;
+}
+
+.dynamicLabel.negative{
+    @include textRed;
+}

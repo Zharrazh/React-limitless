@@ -1,0 +1,32 @@
+@import "../../../../../../utils/styles/textDecoration.scss";
+
+.marketingCompaignsStat{
+    display: flex;
+    align-items: center;
+
+    &__chart{
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    &__textInfo{
+        display: flex;
+        flex-direction: column;
+
+        &__valueInfo{
+            display: flex;
+            align-items: center;
+
+            &__value{
+                margin-right: 8px;
+                @include textBold;
+                @include textBig;
+            }
+        }
+
+        &__dateTime{
+            @include textOpacity50;
+        }
+    }
+}
