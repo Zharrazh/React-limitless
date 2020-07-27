@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { Logo } from "./Logo/Logo";
 import "./Header.scss";
 import "../../utils/styles/extendIconSize.scss";
@@ -10,12 +10,23 @@ import {
 import { ProfileNav } from "./ProfileNav/ProfileNav";
 import avatar from "../../assets/images/ava1.jpg"
 
-export const Header = () => {
+type HeaderProps= {
+  setExpandedSidebar: React.Dispatch<React.SetStateAction<boolean>>;
+  isExpandedSidebar: boolean;
+}
+
+
+export const Header: FunctionComponent<HeaderProps> = (props) => {
+
+  const toggleSidebar = () => {
+    props.setExpandedSidebar(!props.isExpandedSidebar)
+  }
+  
   return (
     <div className="header">
       <div className="header__leftSide">
         <Logo />
-        <div className="header__leftSide__sidebarToggler">
+        <div className="header__leftSide__sidebarToggler" onClick={toggleSidebar}>
           <i className="fas fa-align-justify fa-lg"></i>
         </div>
         <div className="header__leftSide__gitUpdateToggler">
