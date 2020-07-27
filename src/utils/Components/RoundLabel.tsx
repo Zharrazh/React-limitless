@@ -4,7 +4,8 @@ import cn from "classnames"
 
 export enum RoundLabelColor {
     GREEN="GREEN",
-    RED="RED"
+    RED="RED",
+    DARK_TURQUISE ="DARK_TURQUISE"
 }
 
 type RoundLabelProps = {

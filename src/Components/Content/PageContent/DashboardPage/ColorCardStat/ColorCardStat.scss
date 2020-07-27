@@ -1,0 +1,21 @@
+@import "../../../../../utils/styles/textDecoration.scss";
+
+.colorCardStat{
+    flex:1;
+}
+
+.colorCardStat__inner{
+    display: flex;
+    flex-direction: column;
+
+    &__head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__value{
+            @include textBold;
+            @include textVeryBig;
+        }
+    }
+}

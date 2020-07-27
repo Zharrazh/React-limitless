@@ -7,3 +7,17 @@
   background-color: white;
   border: rgba(0, 0, 0, 0.125) 1px solid;
 }
+
+.commonContainer.TURQUOISE{
+  @include bgTurquoise;
+  color:white;
+}
+.commonContainer.CRIMSON{
+  @include bgCrimson;
+  color:white;
+}
+
+.commonContainer.BLUE{
+  @include bgBlue;
+  color:white;
+}
