@@ -1,0 +1,39 @@
+@import "../../../../utils/styles/textDecoration.scss";
+@import "../../../../utils/styles/textColors.scss";
+
+.gitUpdatesWindow{
+    @include textDefaultColor;
+    height: 100%;
+
+    &__inner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &__header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+
+            &__title{
+                @include textBold;
+            }
+        }
+
+        &__content{
+            flex:1;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__footer__inner{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include textOpacity50;
+        }
+    }
+}

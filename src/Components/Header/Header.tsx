@@ -9,6 +9,7 @@ import {
 } from "../../utils/Components/StatusLabel";
 import { ProfileNav } from "./ProfileNav/ProfileNav";
 import avatar from "../../assets/images/ava1.jpg"
+import { GitUpdateToggler } from "./GitUpdateToggler/GitUpdateToggler";
 
 type HeaderProps= {
   setExpandedSidebar: React.Dispatch<React.SetStateAction<boolean>>;
@@ -29,9 +30,7 @@ export const Header: FunctionComponent<HeaderProps> = (props) => {
         <div className="header__leftSide__sidebarToggler" onClick={toggleSidebar}>
           <i className="fas fa-align-justify fa-lg"></i>
         </div>
-        <div className="header__leftSide__gitUpdateToggler">
-          <i className="fas fa-code-branch fa-lg"></i>
-        </div>
+        <GitUpdateToggler />
         <div className="header__leftSide__statusLabel">
           <StatusLabel
             text="Online"

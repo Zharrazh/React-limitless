@@ -10,7 +10,8 @@ export enum CommonContainerColor {
 
 type CommonContainerProps = {
   color?:CommonContainerColor;
+  withPadding?:boolean;
 };
-export const CommonContainer : FunctionComponent<CommonContainerProps>= (props) => {
-  return <div className={cn("commonContainer", props.color)}>{props.children}</div>;
+export const CommonContainer : FunctionComponent<CommonContainerProps>= ({color, children, withPadding=true}) => {
+  return <div className={cn("commonContainer", color,{"withPadding":withPadding})}>{children}</div>;
 };
